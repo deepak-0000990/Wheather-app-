@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="weather-panel" aria-labelledby="app-title">
+      <div class="heading">
+        <p class="eyebrow">Live forecast</p>
+        <h1 id="app-title">Weather App</h1>
+      </div>
+
+      <form class="search-form" id="weather-form">
+        <label class="sr-only" for="city-input">City name</label>
+        <input id="city-input" type="text" placeholder="Search city" autocomplete="address-level2">
+        <button type="submit">Search</button>
+      </form>
+
+      <p class="message" id="message" role="status">Enter a city to check the current weather.</p>
+
+      <article class="weather-card is-hidden" id="weather-card">
+        <div>
+          <p class="location" id="city-name"></p>
+          <p class="condition" id="condition"></p>
+        </div>
+        <div class="temperature-row">
+          <img id="weather-icon" alt="">
+          <p class="temperature"><span id="temperature"></span><span class="unit">°C</span></p>
+        </div>
+        <div class="details-grid">
+          <div>
+            <span>Humidity</span>
+            <strong id="humidity"></strong>
+          </div>
+          <div>
+            <span>Wind</span>
+            <strong id="wind"></strong>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
