@@ -194,3 +194,13 @@ h1 {
     font-size: 3.2rem;
   }
 }
+
+
+
+
+
+
+
+
+sudo dd if=~/Documents/Win10_22H2_EnglishInternational_x64v1.iso  of=/dev/sdb bs=4M status=progress oflag=sync
+
